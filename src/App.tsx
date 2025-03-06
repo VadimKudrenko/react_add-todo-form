@@ -11,7 +11,7 @@ export const App = () => {
   const [todoList, setTodoList] = useState<ToDo[]>(todosFromServer);
 
   const addTodo = (todo: ToDo) => {
-    setTodoList([todo, ...todoList]);
+    setTodoList([...todoList, todo]);
   };
 
   return (
